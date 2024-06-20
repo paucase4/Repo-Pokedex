@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/navigation_pokedex"
+        android:title="Pokedex"
+        android:gravity="center"/>
+    <item
+        android:id="@+id/navigation_trainer"
+        android:title="Trainer"
+        android:gravity="center"
+        />
+    <item
+        android:id="@+id/navigation_store"
+        android:title="Store"
+        android:gravity="center"/>
+</menu>

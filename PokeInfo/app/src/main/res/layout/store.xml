@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:contentDescription="@string/logo_desc"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Store"
+        android:textStyle="bold"
+        android:textSize="46sp"
+        android:fontFamily="@font/pokesolid"
+        android:textColor="@color/black"
+      ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/pokesolid"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="Choose a Pokeball to buy it"
+        android:textSize="22sp"></TextView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/layout_pokeball"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/imageView_pokeball"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/blueee_round" />
+
+            <TextView
+                android:id="@+id/textView_pokeball"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:fontFamily="@font/pokesolid"
+                android:text="Pokeball"
+                android:textColor="#0C0C0C"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView_pokeball_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/pokesolid"
+                android:textSize="13dp"
+                android:text="A standard Pokeball.\nPokecoins: 200" />
+
+            <EditText
+                android:id="@+id/editText_pokeball_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:text="1"
+                android:fontFamily="@font/pokesolid"
+                android:textSize="13dp"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/button_confirm_pokeball"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:text="Buy Pokeball"
+                android:fontFamily="@font/pokesolid"
+                android:textSize="13dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:padding="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_superball"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/imageView_superball"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/blueee_round" />
+
+            <TextView
+                android:id="@+id/textView_superball"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:text="Superball"
+                android:textColor="#0C0C0C"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/pokesolid" />
+            <TextView
+                android:id="@+id/textView_superball_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/pokesolid"
+                android:textSize="13dp"
+                android:text="A super effective Pokeball.\nPokecoins: 500" />
+
+            <EditText
+                android:id="@+id/editText_superball_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:text="1"
+                android:fontFamily="@font/pokesolid"
+                android:textSize="13dp"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/button_confirm_superball"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:text="Buy Superball"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:fontFamily="@font/pokesolid"
+                android:textSize="13dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_ultraball"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/imageView_ultraball"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/blueee_round"
+                android:fontFamily="@font/pokesolid"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/textView_ultraball"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:text="Ultraball"
+                android:fontFamily="@font/pokesolid"
+                android:textColor="#0C0C0C"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView_ultraball_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/pokesolid"
+                android:textSize="13dp"
+                android:text="A very effective Pokeball.\nPokecoins: 1500" />
+
+            <EditText
+                android:id="@+id/editText_ultraball_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:fontFamily="@font/pokesolid"
+                android:textSize="13dp"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/button_confirm_ultraball"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:text="Buy Ultraball"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:fontFamily="@font/pokesolid"
+                android:textSize="13dp"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_masterball"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/imageView_masterball"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/blueee_round" />
+
+            <TextView
+                android:id="@+id/textView_masterball"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:text="Masterball"
+                android:textColor="#0C0C0C"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/pokesolid" />
+            <TextView
+                android:id="@+id/textView_masterball_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/pokesolid"
+                android:textSize="13dp"
+                android:text="This pokeball never misses.\nPokecoins: 100,000" />
+
+            <EditText
+                android:id="@+id/editText_masterball_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:text="1"
+                android:fontFamily="@font/pokesolid"
+                android:textSize="13dp"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/button_confirm_masterball"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:text="Buy Masterball"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:fontFamily="@font/pokesolid"
+                android:textSize="13dp"
+                android:minHeight="0dp"
+
+                android:minWidth="0dp"
+                />
+
+
+        </LinearLayout>
+    </GridLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/frame"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/pokesolid"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="27sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/pokecoin_round"></ImageView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+
+
+
+

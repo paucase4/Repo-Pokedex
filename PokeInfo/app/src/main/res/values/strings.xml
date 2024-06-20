@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PokeInfo</string>
+    <string name="store">Store</string>
+    <string name="trainer">Trainer</string>
+    <string name="pokedex">Pokedex</string>
+    <string name="pok_dex">Pokédex</string>
+    <string name="logo_desc">Pokemon Logo</string>
+    <string name="explanation_text">If you want to change the username\npress refresh</string>
+</resources>
